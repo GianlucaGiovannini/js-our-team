@@ -61,5 +61,46 @@ for (let i = 0; i < team.length; i++) {
 
 /* MILESTONE 2
     stampare le stesse informazioni su DOM sottoforma di stringhe
+    BONUS 1 (solo se non sei giá frustrato dalle milestone 1 e 2):
+    trasformare la stringa foto in una immagine effettiva
+    BONUS 2 (solo se non sei giá fuso):
+    organizzare i singoli membri in card/schede
 */
-// selezionare gli elementi della dom dove voglio stampare le informazioni
+
+
+// selezionare l'elemento della dom dove voglio stampare le informazioni
+const userRowElement = document.querySelector(".row")
+    //console.log(userRowElement)
+
+for (let i = 0; i < team.length; i++) {
+    const teamElement = team[i];
+    // crea degli elementi della dom per ogni singolo utente 
+    const userCardElement = `
+<div class="col">
+    <div class="card border-0">
+        <div class="top_card">
+            <img class="img-fluid" src="./assets/img/${teamElement.image}" alt="dipendente team">
+        </div>
+        <!-- /.top_card -->
+        <div class="bottom_card d-flex flex-column align-items-center">
+            <div class="role mt-2">
+                <h5>
+                    ${teamElement.role}
+                </h5>
+            </div>
+            <div class="name">
+                <h6>
+                    ${teamElement.name}
+                </h6>
+            </div>
+        </div>
+        <!-- /.bottom_card -->
+    </div>
+    <!-- /.card -->
+</div>
+<!-- /.col -->
+`;
+    // console.log(userCardElement)
+    userRowElement.insertAdjacentHTML("beforeend", userCardElement);
+    // ad ogni giro deve stampare a schermo le info di ogni singolo teamElement
+};

@@ -83,12 +83,12 @@ for (let i = 0; i < team.length; i++) {
         </div>
         <!-- /.top_card -->
         <div class="bottom_card d-flex flex-column align-items-center">
-            <div class="role mt-2">
+            <div class="role mt-2 text-center">
                 <h5>
                     ${teamElement.role}
                 </h5>
             </div>
-            <div class="name">
+            <div class="name text-center">
                 <h6>
                     ${teamElement.name}
                 </h6>

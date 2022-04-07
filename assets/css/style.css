@@ -8,6 +8,10 @@ body {
     background-color: rgb(250, 241, 229);
 }
 
+.col {
+    padding: 0.7rem 2rem;
+}
+
 .card {
     background-color: transparent;
 }

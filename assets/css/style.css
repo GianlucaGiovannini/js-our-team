@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 241, 229);
+}
+
+.card {
+    background-color: transparent;
+}
+
+.card img {
+    border-radius: 50%;
+}
+
+.main_description {
+    width: 60%;
+}
+
+.description {
+    line-height: 1.6rem;
+    font-weight: bold;
+}

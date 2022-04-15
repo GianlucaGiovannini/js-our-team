@@ -181,10 +181,10 @@ formElement.addEventListener('submit', function(event) {
 
 
     // prendere il valore dei campi compilati
-    const name = event.target.name.value
-    const role = event.target.role.value
-    const image = event.target.image.value
-        // usare i valori presi sopra per creare un nuovo oggetto
+    const name = event.target.name.value;
+    const role = event.target.role.value;
+    const image = event.target.image.value;
+    // usare i valori presi sopra per creare un nuovo oggetto
     const newMember = {
         name,
         role,
@@ -208,12 +208,15 @@ formElement.addEventListener('submit', function(event) {
     // impedire all'utente di inviare form senza compilare i campi tramite required negli input dell'html
 
     // mostra un allerta che scomprare dopo 2 secondi
-
+    //selezionare il div che diventerà un pop up
     const form_alert = document.querySelector(".alert")
+        // aggiungergli il display "block" quando uno invia il form
     form_alert.style.display = "block";
+    // scrivergli un messaggio
     form_alert.innerHTML = `Hai inserito ${name} con successo`;
     // crea un setTimout per far sparire il pop up generato
     setTimeout(() => {
+        // togliere il display block dopo 4 secondi
         form_alert.style.display = "none";
     }, 4000)
 })

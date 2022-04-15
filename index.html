@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Team</title>
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -32,9 +32,9 @@
         <!-- /.container -->
 
         <div class="users pt-4 px-3">
-            <div class="container pb-5">
+            <div class="container">
                 <div class="wrapper px-4 pb-5 mx-4">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-between">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-around">
 
                     </div>
                     <!-- /.row -->
@@ -44,11 +44,36 @@
             <!-- /.container -->
         </div>
         <!-- /.users -->
+        <!-- bonus nascosto /. bonus nascost -->
+        <section class="add_member mb-2">
+            <div class="container d-flex flex-column align-items-center">
+                <h3 class="fw-bold">Add new member</h3>
+                <div class="alert">Ciao</div>
+                <form action="" method="post">
+                    <div class="form_group py-2 d-flex flex-column align-items-center">
+                        <label for="name" class="mb-1">Nome e Cognome</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form_group py-2 d-flex flex-column align-items-center">
+                        <label for="role" class="mb-1">Ruolo</label>
+                        <input type="text" name="role" id="role" required>
+                    </div>
+                    <div class="form_group py-2 d-flex flex-column align-items-center">
+                        <label for="image" class="mb-1">Immagine</label>
+                        <input type="text" name="image" id="image" required>
+                    </div>
+                    <div class="form_group py-2 d-flex flex-column align-items-center">
+                        <button type="submit" class="btn btn-dark">
+                            Inserisci un nuovo membro
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
 
     </main>
     <!-- /#site_main -->
-
-
 
 
 

@@ -14,6 +14,11 @@ body {
 
 .card {
     background-color: transparent;
+    transition: 1.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card img {
@@ -27,4 +32,21 @@ body {
 .description {
     line-height: 1.6rem;
     font-weight: bold;
+}
+
+input {
+    width: 340px;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+.alert {
+    background-color: rgb(194 251 194 / 55%);
+    border: 1px solid palegreen;
+    border-radius: 2rem;
+    color: rgb(47 173 47);
+    padding: 0.6rem;
+    width: 45%;
+    text-align: center;
+    display: none;
 }
